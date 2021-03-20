@@ -1,0 +1,40 @@
+.sidebar{
+	width: 100%;
+	height: 100%;
+}
+.sidebar__heading{
+font-family: "Open Sans";
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 27px;
+color: #FFFFFF;
+margin-top:19px;
+margin-left:23px;
+}
+
+
+.element__wrapper{
+	width: 278px;
+	height: 49px;
+	background: #FFFFFF;
+	border-radius: 4px;
+	margin-top: 9px;
+	margin-left: 24px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	left:0;
+	top:0;
+}
+.element__wrapper span{
+	margin-left: 11px;
+}
+.element__name{
+	font-family: Open Sans;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 22px;
+	margin-left: 10px;
+}

@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+* {
+	box-sizing: border-box;
+	margin:0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.site__container{
+	width: 1440px;
+	display: flex;
+	height: 900px;
+	background: lightgray;
+	margin-left:auto;
+	margin-right: auto;
+	margin-top: calc(( 100vh - 900px )/2);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.site__page__wrapper{
+	width:1114px;
+	position: relative;
+	height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.site__sidebar__wrapper{
+	width: 326px;
+	background: #2d2d2d;
+	height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.site__page__wrapper label{
+	width: 278px;
+	height: 49px;
+	background: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.need__focus:focus{
+	border:1px solid red;
+}
+
+
+.modal__container{
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all 0.3s linear;
+}
+.modal__content{
+
+width:424px;
+height: 661px;
+background: #fff;
+margin: auto;
+border-radius:5px;
+}
+
+.modal__content form {
+	width:379px;
+	margin-left:auto;
+	margin-right:auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height:500px;
+}
+
+.modal__content form input {
+	width:100%;
+	height: 40px;
+}
+
+.modal__content form button {
+	width:140px;
+	height: 40px;
+	background: #0044C1;
+border-radius: 2px;
+
+font-family: Objektiv Mk3;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color:#fff;
+}
+
+
+.modal__heading{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 21px;
+}
+
+.modal__heading h2{
+	font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 21px;
+line-height: 29px;
+}
+
+
+
+.modal__heading span{
+	opacity:0.2;
 }
